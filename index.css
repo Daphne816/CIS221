@@ -15,8 +15,12 @@
 #skip:focus {position:static;
              width:auto;
              height:auto;}
+header h1 {text-align: center;}
 main {display: flex;
       flex-direction: row;}
+main ul {list-style-type: none;}
+main a {text-decoration: none;
+        margin: 10px 0;}
 footer {text-align: center;}
 footer p {}
 footer time {}
