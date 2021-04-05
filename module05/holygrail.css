@@ -1,0 +1,13 @@
+.container {display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: minmax(150px,25%) 1fr minmax(150px,25%);}
+header {grid-column: 1 / 4;
+        background-color: red;}
+.left-side {grid-column: 1 / 2;
+            background-color: purple;}
+main {grid-column: 2 / 3;
+      background-color: yellow;}
+.right-side {grid-column: 3 / 4;
+             background-color: green;}
+footer {grid-column: 1 / 4;
+        background-color: blue;}
