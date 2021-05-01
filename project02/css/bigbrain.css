@@ -190,7 +190,6 @@ legend {border: 3px ridge #ce2d4d;
 		font-weight: bold;
 		font-size: 1rem;
 		background-color: white;}
-.basebuttons, .frostbuttons, .fillbuttons {margin-left: -10px;}
 .extrasbox {display: inline-grid;
             grid-template-columns: 90px 15px 80px 15px 125px;
 			grid-template-rows: 28.8px;
@@ -209,8 +208,8 @@ legend {border: 3px ridge #ce2d4d;
 		display: inline-block;}
 .requests, #requests {margin-top: 5px;}
 input[type="radio"] {margin-left: 15px;}
-.basebuttons, .frostbuttons, .fillbuttons {display: inline;}
-
+.basebuttons, .frostbuttons, .fillbuttons {display: inline;
+                                           margin-left: -10px;}
 span.label.base, span.label.frost, span.label.fill {position: relative;
                                                     left: 5px;}
 textarea, #pickupDate, #quantity {width: 169.5px;}
