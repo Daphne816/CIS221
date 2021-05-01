@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+/*Reset*/
+* {box-sizing: border-box;
+   margin: 0px;
+   padding: 0px;}
+html, body, div, span, object, iframe, h1, h2, h3, 
+h4, h5, h6, p, blockquote, pre, a, abbr, acronym, 
+address, big, cite, code, del, dfn, em, img, ins, 
+kbd, q, s, samp, small, strike, strong, sub, sup, 
+tt, var, b, u, i, center, dl, dt, thead, tr, th, 
+td, article, aside, canvas, details, embed, figure, 
+figcaption, footer, header, hgroup, menu, nav, output, 
+ruby, section, summary, time, mark, audio, video 
+{margin: 0;
+ padding: 0;
+ border: 0;
+ font-size: 100%;
+ vertical-align: baseline;}
+article, aside, details, figcaption, figure, footer, 
+header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1.2em;}
+ol {padding-left: 1.4em;
+    list-style: decimal;}
+ul {padding-left: 1.4em;
+    list-style: square;}
+table {border-collapse: collapse;
+       border-spacing: 0;}
+
+/*Desktop*/
+.container {display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: minmax(150px,15%) 1fr minmax(150px,20%);
+			margin: 0 auto;
+			width: 80%;
+			min-width: 1024px; max-width: 1536px;}
+body {font-family: Verdana, Arial, Helvetica, sans-serif;
+      overflow-x: hidden;}
+header {grid-column: 1 / 4;
+		background-color: #b5d5e1;
+		display: flex;
+		align-items: baseline;}
+#skip {position:absolute;
+       left:-10000px;
+       top:auto;
+       width:1px;
+       height:1px;
+       overflow:hidden;
+	   font-size: 12px;}
+#skip:focus {position:static;
+             width:auto;
+             height:auto;}
+header img {padding: 10px;}
+header h1 {font-family: 'Luckiest Guy', cursive;
+	       font-size: 90px;
+		   text-shadow: 4px 3px 0 rgba(48,48,48,0.5), -3px -2px 2px #FFFFFF;
+		   position: relative;
+		   bottom: 15%;}
+.ordershead {height: 203.1px;
+             align-items: flex-end;
+			 background: #b5d5e1 url(../images/hat.png) 560px 80% no-repeat}
+.ordershead h1 {line-height: 3.3rem;}
+.pink {color: #ce2d4d;}
+.blue {color: #6aabc3;}
+h1 .bakery  {color: white;
+             font-size: 60px;
+			 text-shadow: 0px 0px 8px #ce2d4d, 0px 0px 8px #6aabc3;
+			 letter-spacing: 1rem;
+			 position: relative;
+			 left: 13%;}
+.left-side {grid-column: 1 / 2;
+            background-image: url(../images/notebook_bg.png);
+			padding-top: 50px;}
+.left-side li {list-style-type: none;			   
+			   margin-bottom: 18px;
+			   padding-right: 15px;}
+.left-side li:before{
+              content:'';
+              padding-left: 25px;
+			  background: url(../images/star.png) no-repeat left center;
+			  background-size: contain;}
+.button {display: inline-block;
+	     background: #ce2d4d;
+         color: #ffffff;
+		 text-decoration: none;
+		 font-size: 18px;
+		 font-family: Verdana, Arial, Helvetica, sans-serif;
+	     font-weight: bold;
+         border-radius: 4px;
+         padding: 8px 5px;
+		 width: 75%;
+		 text-align: center;}
+main {grid-column: 2 / 3;
+      background-color: white;
+      padding-top: 15px;}
+main h1 {font-size: 2rem;
+         color: #ce2d4d;
+		 text-align: center;
+		 border-bottom: 5px solid #ce2d4d;
+		 width: 85%;
+		 margin: 0 auto;
+		 padding-bottom: 16px;}
+main h2 {font-size: 1.5rem;}
+section h2 {font-size: 1.25rem;
+            padding-bottom:3px;}
+#contact h2 {text-decoration: underline;
+             padding-bottom: 5px;}
+.contactopt {display: flex;
+             flex-direction: column;
+             justify-content: space-around;
+			 align-items: center;}
+.callcenter, .email, section {border: 3px solid #6aabc3;
+                              padding: 15px;
+					          margin-top: 15px;
+                              line-height: 140%;
+					          margin: 15px;
+					          width: 85%;}
+.callcenter, .email {background-color: rgba(106,171,195,.5);
+                     text-align: center;
+					  font-size: 18px;}
+.callcenter address p {font-weight: bold;
+                       font-style: normal;
+					   text-decoration: underline;}
+.callcenter a:link, .callcenter a:visited, .email a:link, .email a:visited {color: black;
+                                                                            font-weight: bold;
+										                                    font-style: normal;}
+.callcenter a {display: none;}
+article, section {width: 85%;
+		          margin: 15px auto;
+		          padding: 15px;}
+article:nth-of-type(odd) {background-color: rgba(231,150,166,.1);
+                          border: 5px solid #ce2d4d;}
+article:nth-of-type(even) {background-color: rgba(181,213,225,.4);
+                           border: 5px solid #6aabc3;}
+article h2 {padding: 0 10px 5px;
+            display: inline;
+			font-size: 1.2rem;}
+article time {font-size: 0.9rem;
+              float: right;
+			  padding: 0 10px;
+			  font-weight: bold;}
+section {background-color: rgba(181,213,225,.4);}
+section p {font-size: 17px;
+           line-height: 140%;}
+.content {padding: 10px;
+          font-size: 1rem;
+		  border-top: 2px solid black;
+		  line-height: 140%;}
+form {width: 85%;
+      margin: 0 auto;
+	  background-color: rgba(231,150,166,.3);
+	  padding: 15px 0;}
+form h2 {text-align: center;
+         color: #ce2d4d;
+		 margin-bottom: 5px;
+		 background-color: white;
+		 padding: 5px 0;}
+label:not(.choice), .label {display: inline-block;
+               width: 103px;
+			   text-align: right;
+			   font-weight: bold;
+			   font-size: .9rem;
+			   line-height: 210%;
+			   margin-right: 5px;}
+label.contactPref, label.requests {line-height: 120%;
+                                   vertical-align: top;}
+label.contactPref {margin-top: 10px;}
+.extras {vertical-align: top;
+         position: relative;
+		 left: 5px;}
+fieldset {background-color: white;
+          margin: 0 auto 15px auto;
+		  border: 3px solid #ce2d4d;
+		  padding: 0 10px;
+		  width: 95%;}
+.custinfo {background-image: url(../images/pinkcupcake.png),
+                             linear-gradient(to left, rgba(231,150,166,.5), white 70%);
+           background-position: right bottom, right center;
+		   background-size: 180px 180px, cover;
+           background-repeat: no-repeat;
+		   background-color: white;}
+.custinfo input {width: 169.5px;}
+fieldset label {margin-left: 1%;}
+.choice {font-size: .95rem;
+         margin-left: 0;}
+legend {border: 3px ridge #ce2d4d;
+		padding: 3px;
+		margin-left: 1%;
+		color: #ce2d4d;
+		font-weight: bold;
+		font-size: 1rem;
+		background-color: white;}
+.extrasbox {display: inline-grid;
+            grid-template-columns: 90px 15px 80px 15px 125px;
+			grid-template-rows: 28.8px;
+			padding-left: 5px;}
+.extrasbox input {justify-self: start;
+                  align-self: center;}
+.extrasbox .choice {justify-self: end;
+                    align-self: center;}
+.sprinkles {grid-column: 1/2;}
+.peanuts {grid-column: 3/4;}
+.extraFrost {grid-column: 5/6;}
+.sprinkles, .peanuts, .extraFrost {grid-row: 1/2;}
+.price {margin: 0 0 5px 125px;
+        font-size: .8rem;
+		border-bottom: 1px solid;
+		display: inline-block;}
+.requests, #requests {margin-top: 5px;}
+input[type="radio"] {margin-left: 15px;}
+.basebuttons, .frostbuttons, .fillbuttons {display: inline;}
+
+span.label.base, span.label.frost, span.label.fill {position: relative;
+                                                    left: 5px;}
+textarea, #pickupDate, #quantity {width: 169.5px;}
+textarea {height: 60px;
+          margin-bottom: 10px;}
+.formreq {margin-left: 25px;
+          font-size: .75rem;
+		  font-weight: bold;
+		  font-style: italic;
+		  margin-bottom: 1px;
+		  margin-top: 3px;
+		  text-decoration: underline;}
+#contactPref {width: 169.5px;
+              height: 34.5px;
+			  margin: 10px 0;}
+.input-validation {display: inline-block;}
+input[type="email"]:valid ~ .input-validation::after {content: "✓";
+                                                      color: green;
+													  font-weight: bold;}
+input[type="email"]:invalid:focus ~ .input-validation::after {content: "X";
+                                                              color: red;
+			 								                  font-weight: bold;}
+input:out-of-range {background-color: rgba(255,0,0,.4);
+                    border: 1px solid red;}
+optgroup[label] {font-style: inherit;}
+#submit {font-size: 15px;
+         font-weight: bold;
+		 border-radius: 8px;
+		 padding: 7px 14px;
+         border: 2px solid #ce2d4d;
+		 color: #ce2d4d;
+		 display: block;
+		 margin: 0 auto;}
+#submit:hover {box-shadow: 0 5px 10px grey;
+               cursor: pointer;}
+#submit:active {transform: scale(.95);}
+.right-side {grid-column: 3 / 4;
+             background-color: rgba(231,150,166,.5);
+			 padding: 50px 0;
+			 text-align: center;
+			 display: flex;
+			 flex-direction: column;
+			 align-items: center;}
+.right-side img {border: 5px solid #ce2d4d;
+                 margin-bottom: 15px;
+				 width: 80%;
+				 height: auto;
+				 background-color: white;}				
+footer {grid-column: 1 / 4;
+        background-color: rgba(181,213,225,.8);
+		text-align: center;
+		padding: 5px 0;
+		font-size: .8rem;}
+footer a:link, footer a:visited {color: black;
+                                 font-style: normal;}
+
+/*Tablet*/
+@media only screen and (max-width: 1024px)
+{
+.container {display: flex;
+            flex-direction: column;
+			min-width: 768px;
+			max-width: 1024px;
+			width: auto;}
+.left-side {text-align: center;
+            padding-top: 25px;
+			background-size: cover;}
+.left-side li:before {display: none;}
+.button {width: 100%;
+         padding: 15px;
+		 font-size: 20px;}
+main h1 {font-size: 1.9rem;}
+main h2 {font-size: 1.4rem;}
+section h2 {font-size: 1.1rem;}
+fieldset {line-height: 220%;}
+.custinfo input, #pickupDate, #quantity, #requests {height: 45px;
+                                                    width: 40%;
+                                                    margin-bottom: 15px;}
+#pickupDate {margin-top: 15px;}
+.formreq {font-size: .9rem;}
+.price {font-size: .85rem;}
+#contactPref {width: 40%;
+              margin-bottom: 20px;}
+#submit {font-size: 20px;}
+.right-side {flex-direction :row;
+			 justify-content: space-around;
+			 padding: 25px 0;}
+.right-side img {height: 225px; width: 225px;}
+footer {font-size: .9rem;}
+}
+
+/*Mobile*/
+@media only screen and (min-width: 360px) and (max-width: 768px)
+{
+.container {min-width: 360px;
+            max-width: 768px;}
+header, .ordershead {flex-direction: column;
+                     align-items: center;}
+.ordershead {line-height: .5rem;
+             height: 260px;
+			 background-image: none;}
+header img {transform: scale(0.65);
+            padding: 0;}
+header h1 {font-size: 55px;
+           position: relative;
+		   bottom: 20px;}
+h1 .bakery {font-size: 25px;
+            position: relative;
+			bottom: 25px;}
+.left-side {padding-top: 5px;}
+.button {padding: 7px;}
+main h1 {font-size: 1.7rem;}
+main h2 {font-size: 1.2rem;}
+section h2 {font-size: 1rem;}
+section p {font-size: 15.5px;}
+.contactopt address {padding: 10px 0;
+                     font-size: 105%;}
+.callcenter, .email {font-size: 16px;}
+.callcenter address p {display: none;}
+.callcenter a {display: block;}
+article h2  {display: block;
+			font-size: 1.05rem;}
+article time {font-size: 0.8rem;
+              float: left;
+			  padding: 0 10px;
+			  font-weight: bold;}
+.content {padding-top: 10px;
+          margin-top: 20px;
+          font-size: .95rem;
+		  line-height: 150%;}
+fieldset {line-height: 200%;}
+legend {font-size: .9rem;}
+.orderinfo label:not(.choice), .orderinfo .label {float: left;
+                                                  margin-left: 0;
+									              text-align: left;									            
+									              width: 31px;
+												  font-size: .95rem;}
+label.pickupDate {line-height: 120%;
+                  margin: 15px 0 5px 0;}
+span.label.base, span.label.frost, span.label.fill {position: static;}
+
+.basebuttons, .frostbuttons, .fillbuttons {display: grid;
+                                           grid-template-columns: 13px 1fr;
+										   grid-template-rows: 1fr 1fr 1fr;
+									       line-height: 220%;}
+								   
+input[name="base"] {align-self: center;}
+.basebuttons .choice {padding-left: 20px;}
+input[name="frost"] {margin-left: 45px;
+					 align-self: center;}
+.frostbuttons .choice {padding-left: 50px;}
+input[name="fill"] {margin-left: 27px;
+					align-self: center;}
+.fillbuttons .choice {padding-left: 32px;}
+.choice {font-size: 1rem;}
+#pickupDate {margin-top: 0;}
+.extras {position: static;
+         line-height: 120%;
+		 margin-top: 5px;}
+.extrasbox {grid-template-columns: 1fr;
+	        grid-template-rows: 1fr 1fr 1fr;
+			padding-left: 0;
+			margin-left: 30px;
+			margin-bottom: 5px;}
+.extrasbox .choice {justify-self: start;
+                    align-self: start;
+                    margin-left: 18px;}
+.peanuts {grid-column: 1/2;
+          grid-row: 2/3;}
+.extraFrost {grid-column: 1/2;
+             grid-row: 3/4;}
+.formreq {margin-left: 10px;}
+.price {margin: 0px 0px 5px 65px;
+        border-bottom: none;
+		text-decoration: underline;
+		font-weight: bold;}
+.custinfo {background-image: none;}
+.custinfo input, #contactPref, #pickupDate, #quantity, #requests {width: 100%;}
+#requests {height: 90px;}
+.custinfo label, .custinfo .label {float: left;
+                                   margin-left: 0;
+								   text-align: left;}
+#submit {width: 95%;
+         padding: 14px 14px;}
+.input-validation {display: none;}
+.right-side {padding: 15px 0;}
+.right-side img {height: 140px; width: 140px;}
+footer {font-size: .8rem;}
+}
+
+
