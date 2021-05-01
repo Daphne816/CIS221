@@ -190,6 +190,7 @@ legend {border: 3px ridge #ce2d4d;
 		font-weight: bold;
 		font-size: 1rem;
 		background-color: white;}
+.basebuttons, .frostbuttons, .fillbuttons {margin-left: -10px;}
 .extrasbox {display: inline-grid;
             grid-template-columns: 90px 15px 80px 15px 125px;
 			grid-template-rows: 28.8px;
