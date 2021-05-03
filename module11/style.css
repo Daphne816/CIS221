@@ -181,9 +181,10 @@ iframe {
       background-repeat:none;
       background-image:none;
 
-      animation-name: arrowlight;
-      animation-duration:13s;
-      animation-iteration-count: infinite;
+      animation-name: arrowlight, arrowlightrepeat;
+      animation-duration:13s, 13s;
+	  animation-delay: 0s, 13s;
+      animation-iteration-count: 1, infinite;
     }
 
     @keyframes redlight {
@@ -239,6 +240,27 @@ iframe {
     }
     @keyframes arrowlight {
       0% {
+        background-image:none;
+      }
+      50% {
+        background-image:none;
+      }
+      51% {
+        background-image:none;
+      }
+      90% {
+        background-image:none;
+      }
+      91% {
+        background-image:url(image/arrow.png);
+      }
+      100% {
+        background-image:url(image/arrow.png);
+      }
+	   
+    }
+    @keyframes arrowlightrepeat {
+      0% {
         background-image:url(image/arrow.png);
       }
 	  20% {
@@ -259,8 +281,8 @@ iframe {
       100% {
         background-image:url(image/arrow.png);
       }
-      
-    }
+	   
+    }	
 
 /*--------------------------------------------------------------
 # Footer Area
